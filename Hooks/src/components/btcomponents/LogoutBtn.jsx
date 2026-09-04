@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const LogoutBtn = () => {
+const LogoutBtn = ({ setIsLogin }) => {
   return (
-    <button className='p-5 border m-10 rounded-lg 	shadow-sm cursor-pointer text-red-500'>
-        Logout
+    <button
+      className='p-5 border m-10 rounded-lg shadow-sm cursor-pointer text-red-500'
+      onClick={() => setIsLogin(false)}
+    >
+      Logout
     </button>
-  )
-}
+  );
+};
 
-export default LogoutBtn
+export default LogoutBtn;
