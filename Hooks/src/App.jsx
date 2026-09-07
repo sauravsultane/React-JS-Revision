@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Counter from './components/Counter'
 import Button from './components/Button'
+import Card from './components/Card'
+
 
 const App = () => {
 
@@ -11,11 +13,8 @@ const App = () => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen w-screen bg-gray-900 text-white'>
-      {/* <Counter/> */}
-      <Button handelClick={handelClick} text="Click Me">
-          <h1>{count}</h1>
-      </Button>
+    <div className='h-100 w-100 p-10 mt-10'>
+      <Card/>
     </div>
   )
 }
